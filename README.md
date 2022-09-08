@@ -1,6 +1,6 @@
 # sentiment-analyzer-nodejs
 
-This application can analyze the sentiment the user input provided in the command line.
+This application can analyze the sentiment of the user input provided in the command line.
 ```bash
 node index.js today I am happy 
 Your text has the following sentiment:
