@@ -1,9 +1,15 @@
+import fs from 'node:fs';
 import vader from 'vader-sentiment';
 
 let input = 'I am super happy today';
 if (process.argv.length > 2) {
-  input = process.argv.slice(2).join(' ');
+  if (process.argv[2].includes('.txt')) {
+    input = fs.readFileSync(`./${process.argv[2]}`, 'utf-8');
+  } else {
+    input = process.argv.slice(2).join(' ');
+  }
 }
+console.log(input);
 const result = vader.SentimentIntensityAnalyzer.polarity_scores(input);
 
 function isPositive() {
