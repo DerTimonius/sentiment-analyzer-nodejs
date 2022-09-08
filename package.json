@@ -1,0 +1,9 @@
+{
+  "name": "sentiment-analyzer-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/DerTimonius/sentiment-analyzer-nodejs.git",
+  "author": "Timon Jurschitsch <timon.jurschitsch@proton.me>",
+  "license": "MIT"
+}
